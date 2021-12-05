@@ -23,6 +23,12 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Center(
+              child: Image.asset(
+                'img_login_1.jpg',
+                fit: BoxFit.contain,
+              ),
+            ),
             // Primer Input
             Center(
               child: Container(
@@ -49,7 +55,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
             ),
-            // Boton de Registro
+            // Boton de Ingreso
             Center(
               child: Container(
                 width: 343,
@@ -79,7 +85,7 @@ class _LoginPageState extends State<LoginPage> {
                         height: 1),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/register');
+                    Navigator.pushNamed(context, '/');
                   },
                 ),
               ),

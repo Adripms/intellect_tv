@@ -88,7 +88,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         height: 1),
                   ),
                   onPressed: () {
-                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/login');
                   },
                 ),
               ),

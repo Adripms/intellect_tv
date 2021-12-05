@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'pages/home.dart';
 import 'pages/login.dart';
 import 'pages/registro.dart';
 
@@ -11,20 +12,24 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Red Social Intellect TV',
       theme: ThemeData(
-        primarySwatch: Colors.grey,
+        brightness: Brightness.dark,
+        primarySwatch: Colors.red,
+        primaryColor: const Color(0xFF212121),
+        accentColor: const Color(0xFF64ffda),
+        canvasColor: const Color(0xFF303030),
+        fontFamily: 'Merriweather',
       ),
-      
       initialRoute: '/',
       routes: {
-        '/': (context) => const LoginPage(
+        '/login': (context) => const LoginPage(
               title: 'LogIn',
             ),
         '/register': (context) => const RegisterPage(
               title: 'Registro',
             ),
-        /*'/home': (context) => const HomePage(
-              title: 'Pagina de Post',
-            ),*/
+        '/': (context) => const HomePage(
+              title: 'Home',
+            ),
       },
     );
   }
