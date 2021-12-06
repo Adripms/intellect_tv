@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'pages/content.dart';
 import 'pages/home.dart';
 import 'pages/login.dart';
 import 'pages/registro.dart';
@@ -29,6 +30,9 @@ class App extends StatelessWidget {
             ),
         '/': (context) => const HomePage(
               title: 'Home',
+            ),
+        '/content': (context) => const ContentPage(
+              title: 'Contenido',
             ),
       },
     );
