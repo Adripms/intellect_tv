@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -62,15 +60,15 @@ class _LoginPageState extends State<LoginPage> {
                 height: 52,
                 margin: const EdgeInsets.all(20.0),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(6),
                     topRight: Radius.circular(6),
                     bottomLeft: Radius.circular(6),
                     bottomRight: Radius.circular(6),
                   ),
-                  color: Color.fromRGBO(0, 0, 0, 1),
+                  color: const Color.fromRGBO(0, 0, 0, 1),
                   border: Border.all(
-                    color: Color.fromARGB(0, 0, 0, 1),
+                    color: const Color.fromARGB(0, 0, 0, 1),
                     width: 2,
                   ),
                 ),
